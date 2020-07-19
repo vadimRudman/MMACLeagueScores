@@ -18,6 +18,15 @@ const Navigation = () => (
             <li>
                 <Link to={ROUTES.ACCOUNT}>Account</Link>
             </li>
+            <li>
+                <Link to={ROUTES.SEASONS}>MMAC Seasons</Link>
+            </li>
+            <li>
+                <Link to={ROUTES.WEEKLYGAMES}>MMAC Weekly Games</Link>
+            </li>
+            <li>
+                <Link to={ROUTES.GAME}>MMAC Game</Link>
+            </li>
         </ul>
     </div>
 );

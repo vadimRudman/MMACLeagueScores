@@ -10,6 +10,9 @@ import SignUpPage from '../SignUp';
 import SignInPage from '../SignIn';
 import HomePage from '../Home';
 import AccountPage from '../Account';
+import SeasonsPage from '../Seasons';
+import WeeklyGamesPage from '../WeeklyGames';
+import GamePage from '../Game';
 
 import * as ROUTES from '../../constants/routes';
 
@@ -25,6 +28,9 @@ const App = () => (
             <Route path={ROUTES.SIGN_IN} component={SignInPage} />
             <Route path={ROUTES.HOME} component={HomePage} />
             <Route path={ROUTES.ACCOUNT} component={AccountPage} />
+            <Route path={ROUTES.SEASONS} component={SeasonsPage} />
+            <Route path={ROUTES.WEEKLYGAMES} component={WeeklyGamesPage} />
+            <Route path={ROUTES.GAME} component={GamePage} />
         </div>
     </Router>
 );
