@@ -6,6 +6,7 @@ import {
 import LandingPage from '../Landing';
 import SeasonPage from '../Season';
 import GamePage from '../Game';
+import TeamPage from '../Team'
 
 import * as ROUTES from '../../constants/routes';
 
@@ -14,6 +15,7 @@ const App = () => (
         <div>
             <Route exact path={ROUTES.LANDING} component={LandingPage} />
             <Route path={ROUTES.SEASON} component={SeasonPage} />
+            <Route path={ROUTES.TEAM} component={TeamPage} />
             <Route path={ROUTES.GAME} component={GamePage} />
         </div>
     </Router>
