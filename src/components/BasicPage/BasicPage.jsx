@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import NavigationColumn from '../NavigationColumn/NavigationColumn';
 import ButtonsList from '../ButtonsList/ButtonsList';
+import './styles/BasicPage.scss';
 
 const BasicPage = ({
     title,
@@ -15,8 +16,8 @@ const BasicPage = ({
     return (
         <div className='page'>
             {backLocation && <Link to={backLocation}>Back</Link>}
-            <h2 className='base-page__title'>{title}</h2>
-            <div className='base-page__columnsContainer'>
+            <h2 className='basicPage__title'>{title}</h2>
+            <div className='basicPage__columnsContainer'>
                 {leftSideData &&
                     <div className='leftSide'>
                         <NavigationColumn nextLocation={leftNextLocation} items={leftSideData} />

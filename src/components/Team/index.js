@@ -39,7 +39,7 @@ const LandingPage = () => {
                 <button>Add Game</button>
             </div>
         </div>
-    )
+    );
 };
 
 export default LandingPage;
