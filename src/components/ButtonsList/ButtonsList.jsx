@@ -5,7 +5,6 @@ const ButtonsList = ({
 }) => {
     const renderButton = button => {
         const { text, location } = button;
-        console.log(location); //temp
         return (
             <button>
                 {text}

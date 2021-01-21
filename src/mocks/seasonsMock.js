@@ -2,7 +2,7 @@ export const seasonsData = [
     {
         id: 1,
         name: 'Winter2020',
-        teams: [10, 11, 12, 13],
+        teams: [10, 11, 12, 13, 14, 15, 16],
         games: [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111]
     },
     {
@@ -12,7 +12,7 @@ export const seasonsData = [
         games: []
     },
     {
-        id: 1,
+        id: 3,
         name: 'Fall2020',
         teams: [10, 11, 12, 13],
         games: [100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111]

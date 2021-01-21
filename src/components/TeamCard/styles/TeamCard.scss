@@ -1,15 +1,16 @@
-.playerRow {
-    &__container {
+.teamCard {
+    &__tableHeader {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
-        input:disabled {
-            color: inherit;
-            background-color: inherit;
-            border: 1px solid gray;
-        }
-        input {
-            background-color: lightgreen;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    &__playerRows {
+        &--header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-weight: bold;
         }
     }
 
@@ -22,12 +23,10 @@
     &__fouls {
         width: 11%;
         border: 1px solid gray;
-        cursor: default;
     }
 
     &__playerName {
         width: 23%;
         border: 1px solid gray;
-        cursor: default;
     }
 }
