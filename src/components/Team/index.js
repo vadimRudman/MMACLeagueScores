@@ -1,45 +1,34 @@
 import React, { useState } from 'react';
-import { team1 } from '../../mocks/teamsMock';
-import { player1, player2, player3, player4, player5, player6, player7 } from '../../mocks/playersMock';
-import { game1, game4, game5, game7, game10, game11 } from '../../mocks/gamesMock';
+import { teamsData } from '../../mocks/teamsMock';
+import { playersData } from '../../mocks/playersMock';
+import { gamesData } from '../../mocks/gamesMock';
 import BasicPage from '../BasicPage/BasicPage';
 
-const LandingPage = () => {
-    const teamFetcher = () => team1;
+const TeamPage = () => {
+    const teamFetcher = () => teamsData[0];
+    const allGamesFetcher = () => gamesData;
+    const allPlayersFetcher = () => playersData;
+
     const playersFetcher = playerIds => {
-        const players = [];
-        players.push(player1);
-        players.push(player2);
-        players.push(player3);
-        players.push(player4);
-        players.push(player5);
-        players.push(player6);
-        players.push(player7);
-        return players;
+        return allPlayersFetcher().filter(player => playerIds.includes(player.id));
     }
     const gamesFetcher = gameIds => {
-        const games = [];
-        games.push(game1);
-        games.push(game4);
-        games.push(game5);
-        games.push(game7);
-        games.push(game10);
-        games.push(game11);
-        return games;
+        return allGamesFetcher().filter(game => gameIds.includes(game.id));
     }
     const [team] = useState(teamFetcher());
-    const [games, setGames] = useState(gamesFetcher(team.games));
-    const [players, setPlayers] = useState(playersFetcher(team.players));
+    const { games, players } = team;
+    const [teamGames, setGames] = useState(gamesFetcher(games));
+    const [teamPlayers, setTeamPlayers] = useState(playersFetcher(players));
 
     return (
         <div>
-            <BasicPage title={team.name} leftNextLocation='player' leftSideData={players} rightNextLocation='game' rightSideData={games} />
+            <BasicPage title={team.name} leftNextLocation='player' leftSideData={teamPlayers} rightNextLocation='game' rightSideData={teamGames} />
             <div className='buttons-wrapper'>
                 <button>Add Plyaer</button>
                 <button>Add Game</button>
             </div>
         </div>
-    )
+    );
 };
 
-export default LandingPage;
+export default TeamPage;

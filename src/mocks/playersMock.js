@@ -1,34 +1,72 @@
-export const player1 = {
-    id: 100,
-    name: 'Player One'
-};
-
-export const player2 = {
-    id: 101,
-    name: 'Player Two'
-};
-
-export const player3 = {
-    id: 102,
-    name: 'Player Three'
-};
-
-export const player4 = {
-    id: 103,
-    name: 'Player Four'
-};
-
-export const player5 = {
-    id: 104,
-    name: 'Player Five'
-};
-
-export const player6 = {
-    id: 105,
-    name: 'Player Six'
-};
-
-export const player7 = {
-    id: 106,
-    name: 'Player Seven'
-};
+export const playersData = [
+    {
+        id: 100,
+        name: 'Vadim R',
+        number: 1
+    },
+    {
+        id: 101,
+        name: 'Cedric D',
+        number: 2
+    },
+    {
+        id: 102,
+        name: 'Bart M',
+        number: 3
+    },
+    {
+        id: 103,
+        name: 'Alina M',
+        number: 4
+    },
+    {
+        id: 104,
+        name: 'Patrick C',
+        number: 5
+    },
+    {
+        id: 105,
+        name: 'Oliver L',
+        number: 6
+    },
+    {
+        id: 106,
+        name: 'Christian B',
+        number: 7
+    },
+    {
+        id: 107,
+        name: 'Cedric T',
+        number: 8
+    },
+    {
+        id: 108,
+        name: 'David L',
+        number: 9
+    },
+    {
+        id: 109,
+        name: 'Nehal B',
+        number: 10
+    },
+    {
+        id: 110,
+        name: 'Mohamed C',
+        number: 11
+    },
+    {
+        id: 111,
+        name: 'Son N',
+        number: 12
+    },
+    {
+        id: 112,
+        name: 'Alan T',
+        number: 13
+    },
+    {
+        id: 113,
+        name: 'PJ',
+        number: 14
+    }
+];

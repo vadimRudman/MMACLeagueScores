@@ -12,7 +12,7 @@ const NavigationColumn = ({
         const { name, id } = item;
         const rowLinkTo = buildRowLinkTo(id);
         return (
-            <div className='nav-row'>
+            <div className='nav-row' key={`${name}${id}`}>
                 <Link to={rowLinkTo}>
                     {name}
                 </Link>

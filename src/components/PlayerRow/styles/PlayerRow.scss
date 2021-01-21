@@ -1,0 +1,33 @@
+.playerRow {
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        input:disabled {
+            color: inherit;
+            background-color: inherit;
+            border: 1px solid gray;
+        }
+        input {
+            background-color: lightgreen;
+        }
+    }
+
+    &__jerseyNumber,
+    &__fieldGoals,
+    &__freeThrows,
+    &__points,
+    &__assists,
+    &__rebounds,
+    &__fouls {
+        width: 11%;
+        border: 1px solid gray;
+        cursor: default;
+    }
+
+    &__playerName {
+        width: 23%;
+        border: 1px solid gray;
+        cursor: default;
+    }
+}

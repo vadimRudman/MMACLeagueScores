@@ -1,0 +1,11 @@
+
+.basicPage {
+    &__title {
+        text-align: center;
+    }
+    &__columnsContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
